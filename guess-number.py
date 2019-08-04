@@ -5,9 +5,13 @@
 import random
 
 r = random.randint(1, 100)
+count = 0
 while True:
+
 	num = input('請猜數字:')
 	num = int(num)
+	count = count +1
+	print('你已經猜:',count,'次')
 
 	if num == r:
 		print('你猜中了')
